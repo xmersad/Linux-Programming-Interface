@@ -1,4 +1,4 @@
-Linux Programming Interface — Exercises Repository
+###Linux Programming Interface — Exercises Repository
 
 This repository contains practical exercise implementations and examples for *The Linux Programming Interface* by Michael Kerrisk. It is explicitly designed as a hands-on resource for **system-level programming**: low-level user-space APIs, process and thread control, IPC (pipes, sockets, message queues), file and device I/O, signals, memory management, and other kernel-facing programming topics.
 
@@ -18,22 +18,20 @@ This repo is targeted at:
 * Embedded and kernel-adjacent developers who want practical examples of system calls and low-level patterns.
 * Students and instructors using *The Linux Programming Interface* as a course or self-study reference.
 
-## Recommended repository layout
+## Repository layout
 
 ```
 .
 ├── README.md                    # this file: repo overview, goals, and exercise index
-├── CONTRIBUTING.md              # contribution guidelines
 ├── LICENSE
-├── docs/                        # optional: local copy of book references or notes (not the full book)
-└── Section-<n>/
+└── Section-<number>/
     ├── README.md
-    └── <topic>-<subtopic>/
-        ├── <exercise-dir>/
-        │   ├── src/             # source code
-        │   ├── Makefile         # build rules
-        │   └── README.md        # exercise-specific instructions and explanation
-        └── README.md
+    └── <exercise-dir>/
+        ├── src/             # source code
+        ├── build/           # build example (x86-64)
+        ├── Makefile         # build rules
+        └── README.md        # exercise-specific instructions and explanation
+        
 ```
 
 ## Downloading the book
@@ -52,8 +50,8 @@ This table should be kept up-to-date. Each row links to the exercise folder and 
 | Section |          Exercise         |                     Path                    |                            Short Goal                            | Status |
 | :-----: | :-----------------------: | :-----------------------------------------: | :--------------------------------------------------------------: | :----: |
 |    3    | Determining Glibc Version | `./Section-3/3.3_Determining_Glibc_Version` | Detect runtime glibc version and demonstrate symbol/version APIs |  ready |
+| :-----: | :-----------------------: | :-----------------------------------------: | :--------------------------------------------------------------: | :----: |
 
-> Add a row for each exercise with: Section number, short name, relative path, a one-line goal, and status (ready / draft / wip).
 
 ## Exercise README template (required)
 
@@ -79,10 +77,5 @@ Each exercise directory must include a `README.md` with these fields:
 
 ## License
 
-Choose a permissive open-source license (e.g., MIT) and include the full `LICENSE` file at the repo root.
-
-## Next steps
-
-* Populate the Exercise index table with all existing exercises.
-* Ensure each exercise folder contains the required `README.md` and a working `Makefile`.
+MIT
 
