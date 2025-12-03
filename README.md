@@ -2,7 +2,7 @@
 
 This repository contains practical exercise implementations and examples for *The Linux Programming Interface* by Michael Kerrisk. It is explicitly designed as a hands-on resource for **system-level programming**: low-level user-space APIs, process and thread control, IPC (pipes, sockets, message queues), file and device I/O, signals, memory management, and other kernel-facing programming topics.
 
-## Repository Goals (explicit)
+## Repository Goals 
 
 * Provide runnable, well-documented implementations of selected exercises from *The Linux Programming Interface*.
 * Offer concise, practical notes and implementation tips focused on system-level programming techniques and common pitfalls.
@@ -43,7 +43,7 @@ Link to the official book page or the publisher (O'Reilly): replace `<OFFICIAL_B
 Official book page: <OFFICIAL_BOOK_URL>
 ```
 
-## Exercise index (example table)
+## Exercise index 
 
 This table should be kept up-to-date. Each row links to the exercise folder and briefly states the goal and status.
 
@@ -53,9 +53,9 @@ This table should be kept up-to-date. Each row links to the exercise folder and 
 | :-----: | :-----------------------: | :-----------------------------------------: | :--------------------------------------------------------------: | :----: |
 
 
-## Exercise README template (required)
+## Exercise README template 
 
-Each exercise directory must include a `README.md` with these fields:
+Each exercise directory includes a `README.md` with these fields:
 
 1. **Title** — short exercise title
 2. **Goal** — explicit, single-paragraph statement of what the exercise demonstrates
@@ -69,7 +69,7 @@ Each exercise directory must include a `README.md` with these fields:
 * Use `Section-<n>/<m>_<Short_Title>` for directories, where `<n>` is the book section and `<m>` is an exercise number. Use hyphens and underscores for readability.
 * Keep source under `src/` and provide a `Makefile` with targets: `all`, `clean`, and `test` when appropriate.
 
-## Contributing (brief)
+## Contributing 
 
 * Open an issue describing the proposed exercise or improvement before large PRs.
 * Follow the Exercise README template for any new exercise directories.
