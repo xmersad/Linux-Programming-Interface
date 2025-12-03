@@ -41,7 +41,7 @@ static void section_2_open(void)
 {
     printf("\n=== 2) open() success then failure ===\n");
 
-    const char *okfile = "demo_open_ok.txt";
+    const char *okfile = "build/demo_open_ok.txt";
     int fd = open(okfile, O_CREAT | O_WRONLY | O_TRUNC, 0644);
     if (fd >= 0) {
         const char *text = "demo: write OK\n";
