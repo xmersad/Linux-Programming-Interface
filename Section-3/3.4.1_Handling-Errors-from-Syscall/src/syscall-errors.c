@@ -1,6 +1,5 @@
-/* syscall_final.c
+/* error handling for syscalls practice
  *
- * Very simple, functional demo of syscall error handling.
  * Sections (functions) are called in order:
  * 1) getpid() (no check usually needed)
  * 2) open() success and failure (print numeric errno in failure)
@@ -9,11 +8,10 @@
  * 5) getpriority() example where negative return may be valid
  * 6) perror / strerror demo (simple) and brief strerror_r usage
  *
- * Compile: gcc -Wall -Wextra -o syscall_final syscall_final.c
- * Run:     ./syscall_final
  */
 
 #define _POSIX_C_SOURCE 200809L
+
 
 #include <stdio.h>
 #include <stdlib.h>
