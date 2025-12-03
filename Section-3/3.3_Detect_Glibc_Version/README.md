@@ -1,8 +1,7 @@
 # 3.3 Detect Glibc Version
 
-## Title
+This exercise demonstrates how to identify the glibc version through three mechanisms: compile‑time macros, a runtime glibc‑provided function, and `confstr()` configuration queries. It helps illustrate the differences between build‑time and runtime environments and how each method behaves on systems using glibc or alternative C libraries.
 
-Detect glibc version (compile-time and runtime)
 
 ## Goal
 
