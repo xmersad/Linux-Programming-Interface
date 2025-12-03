@@ -51,7 +51,6 @@ This approach keeps the root README compact and gives each section a single plac
 | ------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | 3       | [Section-3](https://github.com/xmersad/Linux-Programming-Interface/tree/main/Section-3) | Error handling, libc version detection, syscall error conventions, and related examples |
 
-*(Add more sections to this table as the repository grows — each entry should link to ****Section-\<n>**** and include a one-line summary of the section topics.)*
 
 ## Exercise structure and build policy
 
